@@ -5,7 +5,7 @@ metadata:
   #user-defined name of the cluster; string
   name: cl01
   #kubernetes namespace for the cluster; string
-  namespace: workload-ns
+  namespace: kim-argocd-drx5d
 #define the desired state of cluster
 spec:
   #specify the cluster network; required, there is no default
