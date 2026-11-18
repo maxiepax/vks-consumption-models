@@ -25,7 +25,7 @@ spec:
       - name: vmClass
         value: guaranteed-large
       - name: storageClass
-        value: vsan-esa-default-policy-raid5
+        value: vsan-default-storage-policy
     controlPlane:
       replicas: 3
       metadata:
@@ -45,5 +45,5 @@ spec:
                 value:
                   - name: vol-5be3
                     mountPath: /var/lib/containerd
-                    storageClass: vsan-esa-default-policy-raid5
+                    storageClass: vsan-default-storage-policy
                     capacity: 800Gi

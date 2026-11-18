@@ -47,7 +47,7 @@ existingSecret: minio-root-credentials
 
 persistence:
   enabled: true
-  storageClass: vsan-esa-default-policy-raid5
+  storageClass: vsan-default-storage-policy
   accessMode: ReadWriteOnce
   size: 100Gi   # per pod. With 4 pods this is 400Gi raw.
 

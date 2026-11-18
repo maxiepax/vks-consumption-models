@@ -63,5 +63,5 @@ spec:
             namespace: vmware-system-vks-public
       #persistent storage class for cluster nodes
       - name: storageClass
-        value: vsan-esa-default-policy-raid5
+        value: vsan-default-storage-policy
 

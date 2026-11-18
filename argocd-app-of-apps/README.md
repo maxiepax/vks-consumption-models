@@ -61,7 +61,7 @@ All Application and ArgoNamespace resources include the `resources-finalizer.arg
 | Control Plane | 1 replica |
 | Worker Pool | 2 nodes (`node-pool-1`) |
 | VM Class | `best-effort-medium` |
-| Storage Class | `vsan-esa-default-policy-raid5` |
+| Storage Class | `vsan-default-storage-policy` |
 | CNI | Antrea |
 | Add-ons | cert-manager, contour |
 | Autoscaler | Disabled |
@@ -76,7 +76,7 @@ All Application and ArgoNamespace resources include the `resources-finalizer.arg
 | Control Plane | 1 replica |
 | Worker Pool | Autoscaled (min: 1, max: 3) |
 | VM Class | `best-effort-medium` |
-| Storage Class | `vsan-esa-default-policy-raid5` |
+| Storage Class | `vsan-default-storage-policy` |
 | CNI | Antrea |
 | Add-ons | None (base cluster) |
 | Autoscaler | **Enabled** via MachineDeployment annotations |
