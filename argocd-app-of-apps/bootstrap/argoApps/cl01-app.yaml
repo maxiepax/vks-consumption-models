@@ -12,8 +12,7 @@ spec:
     path: argocd-app-of-apps/clusters/cl01
     targetRevision: main
   destination:
-    server: >-
-    https://automation.rainpole.io/proxy/k8s/namespaces/urn:vcloud:namespace:1399db44-3ee6-4869-916a-5052be9e7866
+    server: https://automation.rainpole.io/proxy/k8s/namespaces/urn:vcloud:namespace:1399db44-3ee6-4869-916a-5052be9e7866
     namespace: kim-argocd-drx5d
   syncPolicy:
     automated:
