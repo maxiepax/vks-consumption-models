@@ -6,14 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/skandpurohit/vks-gitops.git
-    path: bootstrap
+    repoURL: https://github.com/maxiepax/vks-consumption-models.git
+    path: argocd-app-of-apps/bootstrap
     targetRevision: main
     directory:
       recurse: true
   destination:
-    name: sp-lab-supervisor
-    namespace: argocd-instance-1
+  server: >-
+    https://automation.rainpole.io/proxy/k8s/namespaces/urn:vcloud:namespace:1399db44-3ee6-4869-916a-5052be9e7866
+  namespace: kim-argocd-drx5d
   syncPolicy:
     automated:
       prune: true
