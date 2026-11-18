@@ -4,7 +4,7 @@ metadata:
   name: cl01
   annotations:
     argocd.argoproj.io/sync-wave: "10"  
-  namespace: kim-argocd
+  namespace: kim-argocd-drx5d
 spec:
   project: default
   source:

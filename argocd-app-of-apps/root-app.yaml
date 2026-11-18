@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: vks-gitops-root
-  namespace: kim-argocd
+  namespace: kim-argocd-drx5d
 spec:
   project: default
   source:
@@ -12,9 +12,9 @@ spec:
     directory:
       recurse: true
   destination:
-  server: >-
-    https://automation.rainpole.io/proxy/k8s/namespaces/urn:vcloud:namespace:1399db44-3ee6-4869-916a-5052be9e7866
-  namespace: kim-argocd-drx5d
+    server: >-
+      https://automation.rainpole.io/proxy/k8s/namespaces/urn:vcloud:namespace:1399db44-3ee6-4869-916a-5052be9e7866
+    namespace: kim-argocd-drx5d
   syncPolicy:
     automated:
       prune: true

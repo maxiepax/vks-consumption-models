@@ -149,7 +149,7 @@ This ensures **foreground cascading deletion**: deleting the root app triggers d
 - **Argo CD Supervisor Service** — [VMware Argo CD Operator](https://vsphere-tmm.github.io/Supervisor-Services/#argocd-operator)
 - **Argo CD Auto-Attach Service** — [warroyo/argocd-attach-service](https://github.com/warroyo/argocd-attach-service)
 - **Broadcom customized Argo CD CLI** (version must contain `vcf` suffix)
-- A vSphere Namespace for the Argo CD instance (e.g., `kim-argocd`)
+- A vSphere Namespace for the Argo CD instance (e.g., `kim-argocd-drx5d`)
 - Git repository accessible from the Supervisor network
 
 ## Quick Start
@@ -157,17 +157,17 @@ This ensures **foreground cascading deletion**: deleting the root app triggers d
 ### 1. Verify Argo CD is Running
 
 ```bash
-kubectl get pods -n kim-argocd
+kubectl get pods -n kim-argocd-drx5d
 ```
 
 ### 2. Log in to Argo CD
 
 ```bash
 # Get the LoadBalancer IP
-kubectl get svc argocd-server -n kim-argocd
+kubectl get svc argocd-server -n kim-argocd-drx5d
 
 # Get the admin password
-kubectl get secret -n kim-argocd argocd-initial-admin-secret \
+kubectl get secret -n kim-argocd-drx5d argocd-initial-admin-secret \
   -o jsonpath='{.data.password}' | base64 -d
 
 # Log in (use the customized Broadcom CLI)
@@ -178,7 +178,7 @@ argocd login <ARGOCD-LB-IP>
 
 ```bash
 argocd cluster add <SUPERVISOR-IP-OR-HOSTNAME> \
-  --namespace kim-argocd \
+  --namespace kim-argocd-drx5d \
   --kubeconfig sc.kubeconfig
 ```
 
