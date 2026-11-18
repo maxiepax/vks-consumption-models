@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
 spec:
   serviceAccount: "" # optionally add an existing service account name
-  argoNamespace: "argocd-instance-1"
+  argoNamespace: "kim-argocd"
   clusterLabels:
     test: "test"
   project: default

@@ -4,7 +4,7 @@ metadata:
   name: cl01
   annotations:
     argocd.argoproj.io/sync-wave: "10"  
-  namespace: argocd-instance-1
+  namespace: kim-argocd
 spec:
   project: default
   source:

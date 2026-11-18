@@ -5,7 +5,7 @@ metadata:
   namespace: workload-ns
 spec:
   clusterName: "cl02"
-  argoNamespace: "argocd-instance-1"
+  argoNamespace: "kim-argocd"
   clusterLabels:
     env: "lab"
     team: "platform"
