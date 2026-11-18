@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/skandpurohit/vks-gitops.git
-    path: clusters/cl02
+    repoURL: https://github.com/maxiepax/vks-consumption-models.git
+    path: argocd-app-of-apps/clusters/cl02
     targetRevision: main
   destination:
     name: sp-lab-supervisor
